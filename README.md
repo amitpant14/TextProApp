@@ -1,8 +1,20 @@
 # TextProApp
 
-This project was developed under the Coursera course [Data Structures and Performance](https://www.coursera.org/learn/data-structures-optimizing-performance?specialization=java-object-oriented) by University of California San Diego. It is a text editor that provides functionality of 
-flagging misspelled words as well as suggesting possible corrections for such words. It also includes Markov text generation and Flesch readability score calculation for a given 
-piece of text. All these features are developed in Java using efficient data structures like Binary Search Trees, Tries, Hashsets etc. The front-end was provided by UCSD to demonstrate the implementations.
+This project was developed under the Coursera course [Data Structures and Performance](https://www.coursera.org/learn/data-structures-optimizing-performance?specialization=java-object-oriented) by University of California San Diego. It is an advanced text editor that uses a variety of data structures to implement following features: 
+* Flesch Index - A score of the readability of input text. Higher the score, easier the text is to read.
+* Markov Text Generator - It generates a text with specified number of words bases on a sample text.
+* Spell-checker - It highlights the misspelled words in the input text.
+* Auto-complete - It can be used to give predictions for a word before it is completed.
+* Spelling correction - It provides suggestions to correct the misspelled words.
+
+The data structures used are:
+* Arrays
+* Linked Lists
+* Binary Search Trees
+* Tries
+* Hash Maps
+
+The sketch UI code is provided as part of the course. The [RichTextFX API](https://github.com/FXMisc/RichTextFX) is used for the implementation of the text area in the application.
 
 Here is a sample of the editor.
 
@@ -12,17 +24,25 @@ Here is a sample of the editor.
 The following steps will help you in getting a copy of the editor up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
-Java-8 should be installed in the system. The editor might not work with Java 9 or above because of the use of the RichTextFX API in the project.
+* Eclipse IDE
+* Java 8
+* Java FX
 
-### Installing
-To import the project on Eclipse, please follow the steps below:
-1. Download and extract the zip file from this repository.
-2. Create a new Java project in Eclipse. Copy the src, lib and data folders from the extracted zip to the project directory.
-3. Go to project properties and add the richtextfx-fat-0.6.10.jar file to the libraries.
-4. To use Java FX libraries which are used for GUI provided by UCSD in Eclipse you must install the e(fx)clipse extension for Eclipse.
+### Setup
+1. Clone the repository
+```
+git clone https://github.com/amitpant14/TextProApp
+```
+2. Import the project in eclipse using following steps:
+* Create a new Java Project in your workspace.
+* Go to File -> Import.
+* Select 'File System'
+* Browse to the cloned directory and set it as the root directory.
 
 ### Running
 Run the [MainApp.java](/src/application/MainApp.java) file to get the editor running.
+
+You are free to use any other IDE or to manually compile and run the app.
 
 ## License
 This project is licensed under the MIT License. You can see the full license [here](/LICENSE.md).
